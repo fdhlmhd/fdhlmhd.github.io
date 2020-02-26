@@ -112,10 +112,11 @@ $ git pull origin master
 ```
 ##### Untuk colaborasi dengan team jangan lupa invite anggota team di setting > manage access > masukan email
 
-### untuk mengatasi pull request
+### untuk mengatasi pull request yang konflik
 ikuti langkah berikut :
 ```sh
-> checkout
+> git fetch origin namabranch:namabranch
+> checkout ke branch
 > git rebase origin/master
 > git add .
 > git rebase --continue
